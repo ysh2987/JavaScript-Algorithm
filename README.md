@@ -7,7 +7,7 @@
 <kbd>JavaScript</kbd> <kbd> Iteration</kbd> [반복문](./README/Ch01_Iteration.md) <br>
 <kbd>JavaScript</kbd> <kbd> Function</kbd> [함수](./README/Ch01_Function.md) <br>
 <kbd>JavaScript</kbd> <kbd> Collections</kbd> [컬렉션](./README/Ch01_Collections.md) <br>
-<kbd>JavaScript</kbd> <kbd> Basic-Object</kbd> [내부 함수](./README/Ch01_Basic-Object.md) <br>
+<kbd>JavaScript</kbd> <kbd> Basic-Object</kbd> [내장 함수](./README/Ch01_Basic-Object.md) <br>
 
 
 ## Chatper 2 . 수학 기본 이론
