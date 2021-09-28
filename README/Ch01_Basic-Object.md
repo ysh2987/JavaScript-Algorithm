@@ -131,10 +131,9 @@ nums.forEach(function(i,j,k){
 - 배열 요소 별 함수 호출 및 결과를 배열로 반환: Array.map(function(item,index,arrat){})
 - item: 배열 요소, index: 배열 위치, array: 배열
 ```javascript
-// for문
 let nums = [1, 2, 3, 4, 5]
 let nums_for_loop = []
-
+// for문
 for (let i = 0; i < nums.length; i++){
   nums_for_loop.push(nums[i] * 2)
 }
@@ -205,4 +204,92 @@ let sum = nums.reduce(function(accumulator, item, index, array){
 })
 console.log(call_cnt) // 4 요소가 5개여도 초기값을 설정하지 않으면 배열에 맨 앞요소에 연산은 하지 않음
 console.log(sum) // 65
+```
+
+## Math
+- 표준 Built-in 객체로써 수학적인 연산을 위한 속성값과 메서드를 제공하는 객체
+- Math는 생성자 함수가 아니며, 모든 속성과 메서드는 정적이기에 Math.function()으로 언제든 호출 가능하다.
+- 대표 속성 및 메서드
+  - Math.E : 오일러 상수
+  - Math.PI : 파이값 제공
+  - Math.abs(x) : 절대값
+  - Math.max(x) : 최대값 
+  - Math.min(x) : 최소값
+  - Math.random() : 랜덤 난수
+  - Math.pow(x, y) : 제곱
+    - Math.pow(2, 3) : 8
+  - Math.sqrt : 제곱근
+    - Math.sqrt(4) : 2
+  - Math.round(x) : 소수점 이하 반올림 정수
+  - Math.ceil(x) : 소수점 이하 올림
+  - Math.floor(x) : 소수점 이하 내림
+
+## 최대 / 최소 / 절대값
+- Math.max(x) : 최대값, Math.min(x) : 최소값, Math.abs(x) : 절대값
+- 배열을 인수로 받아 최대/최소를 산출하려면 apply함수 혹은 스프레드 문법을 사용해야한다.
+  - Math.max(...nums)
+  - Math.max.apply(numm, nums)
+
+## Date
+- 표준 Built-in 객체로써 날짜와 시간을 위한 속성값과 메서드를 제공하는 객체
+- Date 객체는 1970년 1월 1일 UTC 자정과의 시간 차이를 밀리초로 나타내는 정수 값으로 표현한다.
+- 대표 메소드
+
+|함수명||의미|설명|
+|--|--|--|--|
+|getFullYear()|setFullYear()|년도||
+|getMonth()|setMonth()|월|1월(0) ~ 12월(11)|
+|getDate()|setDate()|일||
+|getDay()|setDay()|요일|일요일(0) ~ 토요일(6)
+|getHours()|setHours()|시간||
+|getMinutes()|setMinutes()|분||
+|getSeconds()|setSeconds()|초||
+|getMilliseconds()|setMilliseconds()|밀리초||
+|getTime()|setTime|Unix 타임| 1970/1/1 12:00 기준 경과한 밀리초|
+
+```javascript
+let date = new Date(Date.UTC(2021, 0, 1))
+
+console.log(date.getFullYear()) // 2021
+console.log(date.getMonth()) // 0
+
+// 일요일(0) ~ 토요일(6)    
+console.log(date.getDay()) // 5
+console.log(date.getHours()) // 9
+console.log(date.getUTCHours()) // 0
+console.log(date.getTime()) // 1609459200000
+console.log(date.getTimezoneOffset()) // -540 우리나라 시간과 UTC 시간과의 차이
+```
+```javascript
+let dt = new Date();
+dt.setDate(dt.getDate()+365) // 1년 후 
+dt.setFullYear(dt.getFullYear()-1) // 1년 전
+
+let dt = new Date()
+let arrDayStr = ['일','월','화','수','목','금','토']
+
+let str = dt.getFullYear()+'-'+(dt.getMonth()+1)+'-'+dt.getDate() // 2021-9-29
+let str1 = dt.getFullYear()+'년 '+(dt.getMonth()+1)+'월 '+dt.getDate()+'일' // 2021년 9월 29일
+let str2 = (dt.getMonth()+1)+'월 '+dt.getDate()+'일 '+arrDayStr[dt.getDay()]+'요일'// 9월 29일 수요일
+
+```
+## Date 생성자
+- Date 생성자 종류 :
+  - new Date() 
+  - new Date(miniseconds)
+  - new Date(datestring)
+  - new Date(year,month,date,hours,minutes,seconds,ms)
+```javascript
+let date_now = new Date() // 2021-09-28T17:19:29.211Z
+let date_str = Date() // Wed Sep 29 2021 02:19:29 GMT+0900 (GMT+09:00)
+let date_ms_1 = new Date(0) // 1970-01-01T00:00:00.000Z
+let date_string = new Date("2020-01-01") // 2020-01-01T00:00:00.000Z
+
+// UTC 기준으로 나오기 때문에 1월 1일을 적어도 우리나라 시간은 9시간 전이므로
+// 20년 12월 31일이 출력된다.
+// month : 1월(0) ~ 12월(11) 
+let date_params_1 = new Date(2021, 0, 1) // 2020-12-31T15:00:00.000Z
+
+// UTC 보정
+let date_params_2 = new Date(Date.UTC(2021, 0, 1)) // 2021-01-01T00:00:00.000Z
 ```
