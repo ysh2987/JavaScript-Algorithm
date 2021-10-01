@@ -10,8 +10,9 @@
 <kbd>JavaScript</kbd> <kbd> Basic-Object</kbd> [내장 함수](./README/Ch01_Basic-Object.md) <br>
 
 
-## Chatper 2 . 수학 기본 이론
+## Chapter 2 . 자료구조
+<kbd>JavaScript</kbd> [기본 수학](./README/Ch01_Basic-Object.md) <br>
 
-## Chapter 3 . 자료구조
 
-## Chater 4. 알고리즘
+
+## Chater 3. 알고리즘
