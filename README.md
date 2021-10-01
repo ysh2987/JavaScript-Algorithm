@@ -11,7 +11,7 @@
 
 
 ## Chapter 2 . 자료구조
-<kbd>JavaScript</kbd> [기본 수학](./README/Ch01_Basic-Object.md) <br>
+<kbd>JavaScript</kbd> [기본 수학](./README/Ch02_Math.md) <br>
 
 
 
