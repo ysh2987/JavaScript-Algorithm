@@ -109,6 +109,33 @@ admin["func"]() // hello admin
 - Array.reverse() : 배열을 뒤집는다. sort를 한뒤 reversr를 하게 되면 오름차순으로 정렬된다.
 - Array.join() : 배열의 원소들을 문자열로 변환한다.
 
+## Array.some()
+- 배열 내 단 하나라도 콜백 함수의 조건을 만족하는 요소가 있다면 true, 아니면 false 반환(빈 배열인 경우 false)
+- Array.some(function(item,index,array){})
+## Array.every()
+- 배열 내 단 모든 요소가 콜백 함수의 조건을 만족한다면 true, 아니면 false 반환(빈 배열인 경우 false)
+- Array.every(function(item,index,array){})
+```javascript
+let users = [
+  {name : 'bob', age: 17, job: false},
+  {name : 'alice', age: 20, job: false}
+]
+// some
+let some_age = users.some(function (user){
+  return user.age < 18
+})
+
+console.log(some_age) // true
+// every
+let every_age = users.every(function(user){
+  return user.age < 18
+})
+console.log(every_age) // false
+
+```
+
+
+
 ## 고차함수
 - 하나 이상의 함수를 배개변수로 취하거나 함수를 결과로 반환하는 함수
 - 배개변수로 전달되는 함수는 콜백 함수
@@ -292,4 +319,31 @@ let date_params_1 = new Date(2021, 0, 1) // 2020-12-31T15:00:00.000Z
 
 // UTC 보정
 let date_params_2 = new Date(Date.UTC(2021, 0, 1)) // 2021-01-01T00:00:00.000Z
+```
+
+## prototype
+- 어떠한 객체가 만들어지기 위해 객체의 모태가 되는 원형
+- 자바스크립트는 일반적인 객체지향 언어와는 다르게, 프로토타입을 이용한 복사를 통해 새로운 객체를 생성한다.
+- 일반적인 객체 생성 방식: 속성은 생성자, 메서드는 프로토타입에서 정의
+
+```javascript
+// prototype
+function Person(name,age){
+  this.name = name
+  this.age = age
+}
+Person.prototype.isAdult = function(){
+  return this.age > 18
+}
+
+Person.prototype.test = function(){
+  return this.name == "bob"
+}
+const p1 = new Person("bob", 26)
+const p2 = new Person('alice', 16)
+
+
+console.log(p1.isAdult()) // true
+console.log(p2.isAdult()) // false
+console.log(p1.test()) // true
 ```
