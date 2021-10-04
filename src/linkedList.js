@@ -1,17 +1,3 @@
-# 연결 리스트 (Linked List)
-- 각 노드가 데이터와 포인터를 가지며, `한 줄`로 연결되어 있는 방식으로 데이터를 저장하는 자료 구조
-- 구현 할 메서드
-  - LinkedList.size() : 노드 개수
-  - LinkedList.isEmpty() : 비어 있는지 확인
-  - LinkedList.printNode() : 노드 출력
-  - LinkedList.append() : 노드 맨 뒤에 추가
-  - LinkedList.insert() : 노드 맨 앞에 추가
-  - LinkedList.remove() : 노드 삭제
-  - LinkedList.removeAt() : 노드 삭제
-  - LinkedList.indexOf() : 데이터 위치 확인
-
-## 연결리스트 구현하기
-```javascript
 // Node() : data와 point를 가지고 있는 객체
 function Node(data) {
   this.data = data;
@@ -172,7 +158,4 @@ ll.remove2(100)
 ll.printNode() // 5 -> 3 -> null
 
 console.log(ll.size()); // 2
-```
-
-
-
+// console.log(ll.head.next)

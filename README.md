@@ -10,10 +10,15 @@
 <kbd>JavaScript</kbd> <kbd> Basic-Object</kbd> [내장 함수](./README/Ch01_Basic-Object.md) <br>
 
 
-## Chapter 2 . 자료구조
+## Chapter 2 - 1. 선형 자료구조
+
 <kbd>JavaScript</kbd> [기본 수학](./README/Ch02_Math.md) <br>
-<kbd>JavaScript</kbd> [연결 리스트](./README/Ch02_Linked-List.md) <br>
+<kbd>JavaScript</kbd> [단일 연결 리스트](./README/Ch02_Linked-List.md) <br>
+<kbd>JavaScript</kbd> [이중 연결 리스트](./README/Ch02_Double-Linked.md) <br>
+<kbd>JavaScript</kbd> [원형 연결 리스트](./README/Ch02_Circular-Linked.md) <br>
+<kbd>JavaScript</kbd> [스택](./README/Ch02_Stack.md) <br>
+<kbd>JavaScript</kbd> [큐](./README/Ch02_Queue.md) <br>
 
+## Chapter 2 - 2 . 비선형 자료구조
 
-
-## Chater 3. 알고리즘
+## Chater 4. 알고리즘
