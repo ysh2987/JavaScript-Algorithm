@@ -18,7 +18,13 @@
 <kbd>JavaScript</kbd> [원형 연결 리스트](./README/Ch02_Circular-Linked.md) <br>
 <kbd>JavaScript</kbd> [스택](./README/Ch02_Stack.md) <br>
 <kbd>JavaScript</kbd> [큐](./README/Ch02_Queue.md) <br>
+<kbd>JavaScript</kbd> [우선순위 큐](./README/CH02_Priority_Queue.md) <br>
+<kbd>JavaScript</kbd> [원형 큐](./README/Ch02_Circular_Queue.md) <br>
+<kbd>JavaScript</kbd> [데크](./README/Ch02_Deque.md) <br>
+<kbd>JavaScript</kbd> [딕셔너리](./README/Ch02_Dictionary.md) <br>
 
 ## Chapter 2 - 2 . 비선형 자료구조
+
+
 
 ## Chater 4. 알고리즘
