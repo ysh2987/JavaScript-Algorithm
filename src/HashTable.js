@@ -14,6 +14,7 @@ function HashTable() {
 
 // hashCode() : 해시 함수
 // loselose hsah function
+// ------------------------------------------
 HashTable.prototype.hashCode = function (key) {
   let hash = 0;
   for (let i = 0; i < key.length; i++){
@@ -21,6 +22,19 @@ HashTable.prototype.hashCode = function (key) {
   }
   return hash % HASH_SIZE
 }
+// ------------------------------------------
+
+// hashcod() : 해시함수
+// djb2 hash function
+// HashTable.prototype.hashCode = function (key) {
+//   let hash = 5381; // 소수로
+//   for (let i = 0; i < key.length; i++){
+//     hash = hash * 33 + key.charCodeAt(i)
+//   }
+//   return hash % HASH_SIZE
+// }
+// ------------------------------------------
+
 // put() : 데이터 추가
 HashTable.prototype.put = function (key, value) {
   let index = this.hashCode(key);
@@ -81,17 +95,41 @@ HashTable.prototype.print = function() {
 
 
 let ht = new HashTable();
-console.log(ht.hashCode("Ana")) // 13
 
 ht.put("Ana", 172)
+ht.put("Donnie", 183)
 ht.put("Sue", 163)
+ht.put("Jamie", 168)
 ht.put("Paul", 190)
-console.log(ht)
 
-console.log(ht.get("Paul")) // Element { key: 'Paul', value: 190 }
-console.log(ht.remove("Paul")) // Element { key: 'Paul', value: 190 }
-
+console.log("")
+console.log(ht.size())
 ht.print()
+
+// 충돌 현상 발생
+
+// key : Ana -> index: 13
+// key : Donnie -> index: 13
+// key : Sue -> index: 5
+// key : Jamie -> index: 5
+// key : Paul -> index: 32
+
+// 3 size
 // 5 -> Sue: 163
 // 13 -> Ana: 172
-console.log(ht.getBuffer()) // [Element { key: 'Sue', value: 163 }, Element { key: 'Ana', value: 172 } ]
+// 32 -> Paul: 190
+
+// 해결방법 hasn function을 기존 loselose -> djb2 hash function으로 변경
+// 충돌 해결
+// key : Ana -> index: 6
+// key : Donnie -> index: 36
+// key : Sue -> index: 11
+// key : Jamie -> index: 34
+// key : Paul -> index: 20
+
+// 5 size
+// 6 -> Ana: 172
+// 11 -> Sue: 163
+// 20 -> Paul: 190
+// 34 -> Jamie: 168
+// 36 -> Donnie: 183
