@@ -39,6 +39,28 @@ Dictionary.prototype.remove = function(key){
  }   
  return false
 }
+// keys() : 모든 key값을 배열 형태로 반환
+Dictionary.prototype.keys = function () {
+    return Object.keys(this.items)
+}
+
+// values() : 모든 value 값을 배열 형태로 반환
+Dictionary.prototype.values = function () {
+    return Object.values(this.items)
+}
+// each() : 모든 개체 요소에 대해 callback 함수 수행 (:= for each)
+Dictionary.prototype.each = function (fn) {
+    for (let k in this.items){
+        fn(k, this.items[k])
+    }
+}
+// printDict() : 개체 출력 callbakc
+function printDict(key, value) {
+    console.log(`key: ${key}`)
+    console.log(`value: ${value}`)
+}
+
+
 
 let dict = new Dictionary({age : 10, name: 'jhon'})
 console.log(dict.getBuffer()) //{ age: 10, name: 'jhon' }
@@ -53,3 +75,12 @@ console.log(dict.has('age')) // true
 dict.remove('age')
 console.log(dict.getBuffer()) // { name: 'hello', heigt: 200 }
 console.log(dict.get('name')) // hello
+
+console.log(dict.keys()) // [ 'name', 'heigt' ]
+console.log(dict.values()) //[ 'hello', 200 ]
+
+dict.each(printDict)
+// key: name
+// value: hello
+// key: heigt
+// value: 200
