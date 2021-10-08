@@ -10,7 +10,7 @@
 <kbd>JavaScript</kbd> [내장 함수](./README/Ch01_Basic-Object.md) <br>
 
 
-## Chapter 2 - 1. 선형 자료구조
+## Chapter 2 . 자료구조
 
 <kbd>JavaScript</kbd> [기본 수학](./README/Ch02_Math.md) <br>
 <kbd>JavaScript</kbd> [단일 연결 리스트](./README/Ch02_Linked-List.md) <br>
@@ -22,9 +22,12 @@
 <kbd>JavaScript</kbd> [원형 큐](./README/Ch02_Circular_Queue.md) <br>
 <kbd>JavaScript</kbd> [데크](./README/Ch02_Deque.md) <br>
 <kbd>JavaScript</kbd> [딕셔너리](./README/Ch02_Dictionary.md) <br>
+<kbd>JavaScript</kbd> [해시 테이블](./README/Ch02_Hash-Table.md) <br>
+<kbd>JavaScript</kbd> [선형 해시 테이블](./README/Ch02_LinearHashTable.md) <br>
+<kbd>JavaScript</kbd> [체이닝 해시 테이블](./README/Ch02_ChainingHashTable.md) <br>
 
-## Chapter 2 - 2 . 비선형 자료구조
 
 
 
-## Chater 4. 알고리즘
+
+## Chapter 3 . 알고리즘
