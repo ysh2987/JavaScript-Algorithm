@@ -107,6 +107,7 @@ tree.insert("G")
 tree.insert("I")
 tree.insert("H")
 
+
 function printNode(node) {
   process.stdout.write(`${node.value} -> `)
 }
