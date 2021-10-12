@@ -18,7 +18,7 @@
 <kbd>JavaScript</kbd> [원형 연결 리스트](./README/Ch02_Circular-Linked.md) <br>
 <kbd>JavaScript</kbd> [스택](./README/Ch02_Stack.md) <br>
 <kbd>JavaScript</kbd> [큐](./README/Ch02_Queue.md) <br>
-<kbd>JavaScript</kbd> [우선순위 큐](./README/CH02_Priority-Queue.md) <br>
+<kbd>JavaScript</kbd> [우선순위 큐](./README/Ch02_Priority-Queue.md) <br>
 <kbd>JavaScript</kbd> [원형 큐](./README/Ch02_Circular_Queue.md) <br>
 <kbd>JavaScript</kbd> [데크](./README/Ch02_Deque.md) <br>
 <kbd>JavaScript</kbd> [딕셔너리](./README/Ch02_Dictionary.md) <br>
@@ -31,8 +31,8 @@
 <kbd>JavaScript</kbd> [그래프](./README/CH02_Graph.md) <br>
 <kbd>JavaScript</kbd> [DFS](./README/Ch02_DFS.md) <br>
 <kbd>JavaScript</kbd> [BFS](./README/Ch02_BFS.md) <br>
-
-
+<kbd>JavaScript</kbd> [Heap](./README/Ch02_Heap.md) <br>
+<kbd>JavaScript</kbd> [Trie](./README/Ch02_Trie.md) <br>
 
 
 
