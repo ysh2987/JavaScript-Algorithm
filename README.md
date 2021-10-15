@@ -41,3 +41,5 @@
 > <kbd>JavaScript</kbd> [정렬](./README/Ch03_Sorting.md) <br>
 <kbd>JavaScript</kbd> [이진 검색](./README/Ch03_Binary-Search.md) <br>
 <kbd>JavaScript</kbd> [탐욕법](./README/Ch03_Greedy.md) <br>
+<kbd>JavaScript</kbd> [백트랙킹](./README/Ch03_Backtracking.md) <br>
+<kbd>JavaScript</kbd> [동적계획법](./README/Ch03_Dynamic.md) <br>
