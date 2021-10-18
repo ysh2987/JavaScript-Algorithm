@@ -4,8 +4,8 @@
 - 구현 할 메서드
   - 정점 추가 : ShortestPath.addVertex()
   - 간선 추가 : ShortestPath.addEdge()
-  - 다익스트라 알고리즘 : ShortestPath._extractMin()
-  ShortestPath.dijkstra()
+  - 다익스트라 알고리즘 : ShortestPath._extractMin(), ShortestPath.dijkstra()
+  
 
 ## 다익스트라 구현하기
 ```javascript
