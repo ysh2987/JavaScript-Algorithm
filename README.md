@@ -43,3 +43,5 @@
 <kbd>JavaScript</kbd> [탐욕법](./README/Ch03_Greedy.md) <br>
 <kbd>JavaScript</kbd> [백트랙킹](./README/Ch03_Backtracking.md) <br>
 <kbd>JavaScript</kbd> [동적계획법](./README/Ch03_Dynamic.md) <br>
+<kbd>JavaScript</kbd> [다익스트라](./README/Ch03_Dijkstra.md) <br>
+
